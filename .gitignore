@@ -16,15 +16,3 @@ venv/
 ENV/
 env/
 graphenv/
-
-# Streamlit cache
-.streamlit/
-
-# Ignore everything in data/ and img/, but allow required files
-data/*
-!data/*.pkl
-!data/*.graphml
-!data/*.ttl
-
-img/*
-!img/*.pkl
