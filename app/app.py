@@ -43,7 +43,7 @@ if page == "Visualizations":
     st.title("## Explore Global Movie Trends (TMDB 5000 Dataset)")
 
     def load_fig(filename):
-        path = os.path.join("..", "img", filename)
+        path = os.path.join("img", filename)
         with open(path, "rb") as f:
             return pickle.load(f)
         
