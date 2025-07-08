@@ -19,8 +19,8 @@ st.set_page_config(page_title="TMDB Graph-Based Movie Explorer", layout="wide")
 # Load resources
 @st.cache_resource
 def load_graph_and_embeddings():
-    graph_path = os.path.join("..", "data", "movie_knowledge_graph.graphml")
-    embedding_path = os.path.join("..", "data", "embedding_dict.pkl")
+    graph_path = os.path.join("data", "movie_knowledge_graph.graphml")
+    embedding_path = os.path.join("data", "embedding_dict.pkl")
 
     G = nx.read_graphml(graph_path)
     with open(embedding_path, "rb") as f:
