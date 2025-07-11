@@ -124,7 +124,7 @@ elif page == "Graph Explorer":
         if G.nodes[n].get('type') == 'director' and 'name' in G.nodes[n]
     ])
     selected_director = st.selectbox("Select a director", director_names)
-    st.text("For example, Christopher Nolan is a good example")
+    st.text("Christopher Nolan is a good example :)")
     director_id = f"director_{selected_director}"
 
     movie_nodes = list(G.neighbors(director_id))
